@@ -1,0 +1,78 @@
+@import './variables';
+
+//functions
+@function getComponentColor($Color-name){
+ @return map-get($GameComponentsBackColor, $Color-name);
+}
+
+@function getTextColor($Color-name){
+ @return map-get($TextColorMao, $Color-name);
+}
+
+//mixins
+
+@mixin sizing() {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+@mixin center() {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+}
+
+@mixin MakeCard() {
+ height: 100px;
+ width: 80%;
+ border: 2px solid rgba(255, 255, 255, 0.5);
+ border-radius: 10px;
+}
+
+@mixin MakeMiniCard() {
+ height: 100px;
+ width: 22.5%;
+ background-color: white;
+ border-radius: 10px;
+}
+
+@mixin styleImage1() {
+ height: 170px;
+ width: 170px;
+ background-image: getComponentColor(one);
+ border-radius: 50%;
+}
+
+@mixin styleIMage1() {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+}
+
+@mixin styleReplayBtn() {
+  height: 50px;
+  width: 200px;
+  background-color: white;
+  border:none ;
+  border-radius: 10px;
+}
+
+@mixin styleImageMobile1() {
+ height: 120px;
+ width: 120px;
+ background-image: getComponentColor(one);
+ border-radius: 50%;
+}
+
+@mixin StyleBtn() {
+  height: 40px;
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 100% , 0.5);
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: white;
+  border-radius: 10px;
+}

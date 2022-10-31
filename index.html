@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="scss/style.css">
+ <script defer src="JS/script.js"></script>
+ <title>Game</title>
+</head>
+<body>
+    <main >
+      <div id="card">
+        <img src="images/logo.svg" alt="">
+        <div class="MiniCard">
+          <h2>
+           score <br>
+           <span id="Score2"> 0 </span>
+          </h2>
+        </div>
+      </div>
+      <br><br>
+      <div class="GameBody">
+       <svg width="313" height="298" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="15" fill="none" opacity=".2" d="M156.5 262 300 8H13z"/></svg>
+       <ul>
+        <div id="menu1" color1="#ec9e0e" color2="#eca922">
+         <img src="images/icon-paper.svg" id="image1" alt="">
+        </div>
+        <div id="menu2" color1="#4865f4" color2="#5671f5" >
+         <img src="images/icon-scissors.svg" id="image2" alt="">
+        </div>
+        <div id="menu3" color1="#dc2e4e" color2="#dd405d">
+         <img src="images/icon-rock.svg" id="image3" alt="">
+        </div>
+       </ul>
+      </div>
+      <br><br>
+      <div class="btn">
+        <button id="RulesBtn">
+          RULES
+        </button>      
+         <div id="Rules">       
+          <img src="images/image-rules.svg" id="ImageRules" alt="">
+        </div>      
+      </div>
+    </main>
+    <section class="pickedForm">
+      <div class="card">
+        <img src="images/logo.svg" alt="">
+        <div class="MiniCard">
+          <h2>
+           score <br>
+           <span id="Score">  </span>
+          </h2>
+        </div>
+      </div>
+      <br><br>
+      <div class="chosenItem">
+        <div class="user">
+          <h1>
+            You Picked
+          </h1>
+          <div class="UserItem">
+           
+          </div>
+          <p id="win1">
+            Winner
+          </p>
+        </div>
+        <div class="Raplay">
+          <h3 id="SayWinner">
+
+          </h3>
+          <button id="RePlay">
+            PLAY AGAIN
+          </button>
+        </div>
+        <div class="Pc">
+          <h1>
+            The House Picked
+          </h1>
+          <div class="PcItem">
+
+          </div>
+          <p id="win2">
+            Winner
+          </p>
+        </div>       
+      </div>
+      <br><br>
+    </section>
+</body>
+</html>

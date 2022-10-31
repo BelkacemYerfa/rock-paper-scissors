@@ -1,0 +1,232 @@
+@import './variables';
+@import './functions';
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+//code section
+
+body{
+ min-height:100vh;
+ background-image: $BackColorBody;
+ font-family: 'Barlow Semi Condensed', sans-serif;
+ @include sizing();
+ @include center();
+ main{
+  width: 683px;  
+  @media screen and (max-width:600px){
+   width: 100%;
+   .GameBody{
+    position: relative;
+    margin-left: -15%;
+    text-align: center;
+    svg{
+     margin-left: 15%;
+     margin-top: 5%;
+     height: 70%;
+     width: auto;
+    }
+    ul{
+     img{
+      height: auto;
+      width: auto;
+     }
+     #menu1{
+      position: absolute;
+      top: 0;
+      left: 15%;
+      @include styleImageMobile1()
+     }
+     #menu2{
+      position: absolute;
+      top:0;
+      right: 2%;
+      @include styleImageMobile1();
+      background-image: getComponentColor(two);
+     }
+     #menu3{
+      position: absolute;
+      top: 63.5%;
+      left: 43.5%;
+      @include styleImageMobile1();
+      background-image: getComponentColor(three);
+     }
+    }
+   }
+   .btn{
+    #Rules{
+      img{
+        margin-left: 15%;
+        height: 20%;
+        width: auto;
+      }
+    }
+   }
+  }
+  #card{
+   margin-left: 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px;
+   @include MakeCard();
+   .MiniCard{
+    @include MakeMiniCard();
+    h2{
+     text-align: center;
+     color: blue;
+     letter-spacing: 2.5px;
+     font-size: 15px;
+      span{
+       color: rgba(0, 0, 0, 0.5);
+       font-size: 40px;
+      }
+    }
+   }
+  }
+  .GameBody{
+    margin-top: 5%;
+    text-align: center;
+   svg{
+     margin-top: 5%;
+     width : 313px ; 
+     height: 278;
+     position: relative;
+    }
+    img{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-50%);
+     height: 70px;
+     width: 70px;
+    }
+    #menu1{
+     position: absolute;
+     top: 32.5%;
+     left: 33%;
+     @include styleImage1();
+    }
+    #menu2{
+      position: absolute;
+      top: 32.5%;
+      right: 33%;
+      @include styleImage1();
+      background-image: getComponentColor(two);
+    }
+    #menu3{
+     position: absolute;
+     top: 65.5%;
+     left: 42.5%;
+     @include styleImage1();
+     background-image: getComponentColor(three);
+    }   
+  }
+  .btn{
+    text-align: right;
+      #Rules{
+        margin-top: 10vh;
+        display: none;
+        background-color: white;
+        text-align: center;
+        img{
+          position: relative;
+          @include center();
+          height: 90%;
+          width: auto;
+        }
+    }
+    button{
+      cursor: pointer;
+      @include StyleBtn();
+    }
+   }
+  }
+  .pickedForm{
+    display: none;
+    width: 50%;
+    @media screen and (max-width:600px){
+      width: 100%;
+      .UserItem , .PcItem {
+       @include center();
+      }
+      #RePlay{
+       margin-left: 100px;
+      }
+    }
+    .card{
+      margin-left: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      @include MakeCard();
+      .MiniCard{
+       @include MakeMiniCard();
+       h2{
+        text-align: center;
+        color: blue;
+        letter-spacing: 2.5px;
+        font-size: 15px;
+         span{
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 40px;
+         }
+        }
+      }
+    }
+    .chosenItem{
+      p{
+        display: none;
+      }
+      h1,p{
+        color: white;
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: 20px;
+      }
+      h3{
+        @extend h1;
+        font-size: 40px;
+        font-weight: 700;
+      }
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      @media screen and (max-width:600px) {
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+      .UserItem{
+        img{
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          height: 70px;
+          width: 70px;
+        }
+      }
+      #RePlay{
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 600;
+        padding: 10px ; 
+        @include styleReplayBtn();
+        transition: .5s;
+        font-size: 20px;
+        &:hover{
+          color: #dd405d;
+        }
+      }
+      .PcItem{
+        img{
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          height: 70px;
+          width: 70px;
+        }
+      }
+    }
+  }
+}

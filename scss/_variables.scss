@@ -1,0 +1,11 @@
+$GameComponentsBackColor:(
+ "one" :linear-gradient(#ec9e0e , #eca922),
+ "two" :linear-gradient(#4865f4 , #5671f5),
+ "three" :linear-gradient(#dc2e4e , #dd405d),
+);
+$TextColorMao:(
+ "one":hsl(229, 25%, 31%),
+ "two":hsl(229, 64%, 46%),
+ "three": hsl(217, 16%, 45%),
+);
+$BackColorBody:radial-gradient(hsl(214, 47%, 23%) , hsl(237, 49%, 15%));

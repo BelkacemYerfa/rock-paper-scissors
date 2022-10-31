@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
+body {
+  min-height: 100vh;
+  background-image: radial-gradient(hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%));
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body main {
+  width: 683px;
+}
+@media screen and (max-width: 600px) {
+  body main {
+    width: 100%;
+  }
+  body main .GameBody {
+    position: relative;
+    margin-left: -15%;
+    text-align: center;
+  }
+  body main .GameBody svg {
+    margin-left: 15%;
+    margin-top: 5%;
+    height: 70%;
+    width: auto;
+  }
+  body main .GameBody ul img {
+    height: auto;
+    width: auto;
+  }
+  body main .GameBody ul #menu1 {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    height: 120px;
+    width: 120px;
+    background-image: linear-gradient(#ec9e0e, #eca922);
+    border-radius: 50%;
+  }
+  body main .GameBody ul #menu2 {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    height: 120px;
+    width: 120px;
+    background-image: linear-gradient(#ec9e0e, #eca922);
+    border-radius: 50%;
+    background-image: linear-gradient(#4865f4, #5671f5);
+  }
+  body main .GameBody ul #menu3 {
+    position: absolute;
+    top: 63.5%;
+    left: 43.5%;
+    height: 120px;
+    width: 120px;
+    background-image: linear-gradient(#ec9e0e, #eca922);
+    border-radius: 50%;
+    background-image: linear-gradient(#dc2e4e, #dd405d);
+  }
+  body main .btn #Rules img {
+    margin-left: 15%;
+    height: 20%;
+    width: auto;
+  }
+}
+body main #card {
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: 100px;
+  width: 80%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+body main #card .MiniCard {
+  height: 100px;
+  width: 22.5%;
+  background-color: white;
+  border-radius: 10px;
+}
+body main #card .MiniCard h2 {
+  text-align: center;
+  color: blue;
+  letter-spacing: 2.5px;
+  font-size: 15px;
+}
+body main #card .MiniCard h2 span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+}
+body main .GameBody {
+  margin-top: 5%;
+  text-align: center;
+}
+body main .GameBody svg {
+  margin-top: 5%;
+  width: 313px;
+  height: 278;
+  position: relative;
+}
+body main .GameBody img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 70px;
+  width: 70px;
+}
+body main .GameBody #menu1 {
+  position: absolute;
+  top: 32.5%;
+  left: 33%;
+  height: 170px;
+  width: 170px;
+  background-image: linear-gradient(#ec9e0e, #eca922);
+  border-radius: 50%;
+}
+body main .GameBody #menu2 {
+  position: absolute;
+  top: 32.5%;
+  right: 33%;
+  height: 170px;
+  width: 170px;
+  background-image: linear-gradient(#ec9e0e, #eca922);
+  border-radius: 50%;
+  background-image: linear-gradient(#4865f4, #5671f5);
+}
+body main .GameBody #menu3 {
+  position: absolute;
+  top: 65.5%;
+  left: 42.5%;
+  height: 170px;
+  width: 170px;
+  background-image: linear-gradient(#ec9e0e, #eca922);
+  border-radius: 50%;
+  background-image: linear-gradient(#dc2e4e, #dd405d);
+}
+body main .btn {
+  text-align: right;
+}
+body main .btn #Rules {
+  margin-top: 10vh;
+  display: none;
+  background-color: white;
+  text-align: center;
+}
+body main .btn #Rules img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  height: 90%;
+  width: auto;
+}
+body main .btn button {
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid hsla(0deg, 0%, 100%, 0.5);
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: white;
+  border-radius: 10px;
+}
+body .pickedForm {
+  display: none;
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  body .pickedForm {
+    width: 100%;
+  }
+  body .pickedForm .UserItem, body .pickedForm .PcItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  body .pickedForm #RePlay {
+    margin-left: 100px;
+  }
+}
+body .pickedForm .card {
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: 100px;
+  width: 80%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+body .pickedForm .card .MiniCard {
+  height: 100px;
+  width: 22.5%;
+  background-color: white;
+  border-radius: 10px;
+}
+body .pickedForm .card .MiniCard h2 {
+  text-align: center;
+  color: blue;
+  letter-spacing: 2.5px;
+  font-size: 15px;
+}
+body .pickedForm .card .MiniCard h2 span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+}
+body .pickedForm .chosenItem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .pickedForm .chosenItem p {
+  display: none;
+}
+body .pickedForm .chosenItem h1, body .pickedForm .chosenItem h3, body .pickedForm .chosenItem p {
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+body .pickedForm .chosenItem h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+  body .pickedForm .chosenItem {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+body .pickedForm .chosenItem .UserItem img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 70px;
+  width: 70px;
+}
+body .pickedForm .chosenItem #RePlay {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  height: 50px;
+  width: 200px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  font-size: 20px;
+}
+body .pickedForm .chosenItem #RePlay:hover {
+  color: #dd405d;
+}
+body .pickedForm .chosenItem .PcItem img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 70px;
+  width: 70px;
+}/*# sourceMappingURL=style.css.map */
